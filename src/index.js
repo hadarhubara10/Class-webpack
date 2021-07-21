@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Class_1 = require("./Class");
+const Student_1 = require("./Student");
+const Teacher_1 = require("./Teacher");
+let hadar = new Student_1.Student('hadar', 100, 'hadar@walla.com', 22);
+let hila = new Student_1.Student('hila', 100, 'hila@walla.com', 20);
+let abramov = new Student_1.Student('abramov', 90, 'abramov@walla.com', 22);
+let eyal = new Teacher_1.Teacher('eyal', 'Programming');
+let jhonBrice = new Class_1.Class(100, eyal, [hadar, hila, abramov], 30);
+jhonBrice.printClassInfo();
